@@ -2,8 +2,8 @@
 
 RayTracer::RayTracer()
 {
-	Sphere s;
-	objects.push_back(&s);
+	Sphere *s = new Sphere();
+	objects.push_back(s);
 }
 
 RayTracer::~RayTracer()
@@ -12,12 +12,14 @@ RayTracer::~RayTracer()
 
 glm::vec3 RayTracer::TraceRay(Ray _ray)
 {
-	bool intersect;
-	intersect = objects[0]->RayIntersect(_ray);
-	if (intersect == false)
+	RayInfo rF;
+
+	rF = objects[0]->RayIntersect(_ray);
+
+	if (rF.intersect == true)
 	{
-		return glm::vec3(0.0, 0.0, 0.0);
+		return objects[0]->Shade(rF.iP);
 	}
-	return glm::vec3(0.0,0.0,1.0);
+	return glm::vec3(0.0,0.0,0.0);
 }
 
