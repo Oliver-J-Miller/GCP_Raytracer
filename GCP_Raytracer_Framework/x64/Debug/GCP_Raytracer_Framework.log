@@ -1,8 +1,12 @@
-﻿  Main.cpp
-H:\Year3\RayTracer\GCP_Raytracer_Framework\Main.cpp(45,29): warning C4018: '<': signed/unsigned mismatch
-H:\Year3\RayTracer\GCP_Raytracer_Framework\Main.cpp(47,30): warning C4018: '<': signed/unsigned mismatch
+﻿  Camera.cpp
+  GCP_GFX_Framework.cpp
+  Main.cpp
+D:\s5403397\GCP_Raytracer\GCP_Raytracer_Framework\Main.cpp(45,29): warning C4018: '<': signed/unsigned mismatch
+D:\s5403397\GCP_Raytracer\GCP_Raytracer_Framework\Main.cpp(47,30): warning C4018: '<': signed/unsigned mismatch
+  Ray.cpp
   Ray_Tracer.cpp
   Sphere.cpp
-H:\Year3\RayTracer\GCP_Raytracer_Framework\Sphere.cpp(28,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\s5403397\GCP_Raytracer\GCP_Raytracer_Framework\Sphere.cpp(28,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Generating Code...
-  GCP_Raytracer_Framework.vcxproj -> H:\Year3\RayTracer\x64\Debug\GCP_Raytracer_Framework.exe
+  glew.c
+  GCP_Raytracer_Framework.vcxproj -> D:\s5403397\GCP_Raytracer\x64\Debug\GCP_Raytracer_Framework.exe
