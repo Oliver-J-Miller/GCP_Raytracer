@@ -1,10 +1,10 @@
 #include "Sphere.h"
 
-Sphere::Sphere()
+Sphere::Sphere(glm::vec3 pos, float r, glm::vec3 mat)
 {
-	position = glm::vec3{ 320,240,-50 };
-	radius = 50.0f;
-	matColour = glm::vec3{ 0.f,0.f,1.0f };
+	position = pos;
+	radius = r;
+	matColour = mat;
 
 	lightSource = glm::normalize(glm::vec3{ 2.0,1.0,2.0 });
 }
